@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Habit Tracking</string>
+    <string name="edit_theme">Add A Habit</string>
+
+    <string name="menu_insert">Insert Habit</string>
+    <string name="menu_delete">Delete Habit</string>
+    <string name="save_habit">Save</string>
+    <string name="delete_habit">Delete</string>
+
+    <string name="habit_title">Title</string>
+    <string name="habit_duration">Duration</string>
+    <string name="habit_frequency">Frequency</string>
+    <string name="habit_place">Place</string>
+
+    <string name="add_button">Add</string>
+</resources>
