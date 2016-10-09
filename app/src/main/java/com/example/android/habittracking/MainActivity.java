@@ -78,8 +78,10 @@ public class MainActivity extends AppCompatActivity {
                 int currentID = cursor.getInt(idColumnIndex);
                 String habitItem = cursor.getString(nameColumnIndex);
                 String habitDuration = cursor.getString(durationColumnIndex);
-                String habitFrequency = cursor.getString(frequencyColumnIndex);
+                int frequency = cursor.getInt(frequencyColumnIndex);
                 String habitPlace = cursor.getString(placeColumnIndex);
+
+                String habitFrequency = Integer.toString(frequency);
 
                 habitDisplayView.append(("\n" + currentID + " - " +
                 habitItem + " - " +

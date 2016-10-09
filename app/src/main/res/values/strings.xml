@@ -9,7 +9,7 @@
 
     <string name="habit_title">Title</string>
     <string name="habit_duration">Duration</string>
-    <string name="habit_frequency">Frequency</string>
+    <string name="habit_frequency">Frequency Per Day (NUMBER)</string>
     <string name="habit_place">Place</string>
 
     <string name="add_button">Add</string>

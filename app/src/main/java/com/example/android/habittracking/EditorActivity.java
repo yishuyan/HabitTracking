@@ -37,6 +37,7 @@ public class EditorActivity extends AppCompatActivity{
         String itemString = itemEditText.getText().toString().trim();
         String durationString = durationEditText.getText().toString().trim();
         String frequencyString = frequencyEditText.getText().toString().trim();
+        int frequency = Integer.parseInt(frequencyString);
         String placeString = placeEditText.getText().toString().trim();
         Log.i("Input: ", itemString + ", " + durationString + ", " + frequencyString + "," + placeString);
 
@@ -46,14 +47,9 @@ public class EditorActivity extends AppCompatActivity{
         ContentValues values = new ContentValues();
         values.put(HabitEntry.COLUMN_HABIT_ITEM, itemString);
         values.put(HabitEntry.COLUMN_HABIT_DURATION, durationString);
-        values.put(HabitEntry.COLUMN_HABIT_FREQUENCY, frequencyString);
+        values.put(HabitEntry.COLUMN_HABIT_FREQUENCY, frequency);
         values.put(HabitEntry.COLUMN_HABIT_PLACE, placeString);
 
-//        ContentValues values = new ContentValues();
-//        values.put(HabitEntry.COLUMN_HABIT_ITEM, "1");
-//        values.put(HabitEntry.COLUMN_HABIT_DURATION, "2");
-//        values.put(HabitEntry.COLUMN_HABIT_FREQUENCY, "3");
-//        values.put(HabitEntry.COLUMN_HABIT_PLACE, "4");
 
         long newRowId = db.insert(HabitEntry.TABLE_NAME, null, values);
 
